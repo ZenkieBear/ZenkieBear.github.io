@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS 文档 */
+/*规范*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 微软雅黑;
+}
+body {
+	background-color: #F9F9F9;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #878787;
+}
+a:hover,img,input,.banner *{
+	transition: all 0.3s;
+}
+
+/*头部*/
+.header{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 1;
+}
+.header table {
+	margin: auto;
+}
+.header img {
+	vertical-align: middle;
+}
+.header hr {
+	height: 1px;
+	background-color: black;
+}
+
+/*Banner*/
+.banner {
+	width: 100%;
+	height: calc(100vh - 120px);
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	margin-left: -1px;
+	margin-top: 120px;
+	border: 1px solid white;
+	border-right: none;
+}
+.banner:hover {
+	cursor: pointer;
+}
+.banner-text {
+	margin: 100px;
+	font-weight: bold;
+	font-size: 60px;
+	letter-spacing: 10px;
+}
+.banner-text .white {
+	color: white;
+}
+.banner-text .small {
+	font-size: 24px;
+	letter-spacing: 0px;
+}
+.banner-text .grey {
+	color: #B4B4B4;
+}
+.banner-text .buy {
+	padding: 10px 30px;
+	font-size: 24px;
+	border: 3px solid black;
+	border-radius: 30px;
+}
+.banner-text .buy:hover {
+	padding: 10px 30px;
+	font-size: 24px;
+	color: #878787;
+	border: 3px solid #878787;
+}
+
+/*商品*/
+.productions {
+	text-align: center;
+	margin: 30px;
+}
+.productions img {
+	padding: 0;
+	margin: 15px 15px;
+	border-radius: 15px;
+}
+.productions img:hover {
+	box-shadow: 0 0 10px 5px #bebebe;
+	transform: scale(1.05,1.05);
+}
+
+/*热卖商品*/
+.hot-shops {
+	width: 943px;
+	margin: 30px auto;
+}
+.hot-shops .sort {
+	width: 100px;
+	border-radius: 0;
+}
+.hot-shops .sort:hover {
+	box-shadow: none;
+}
+.hot-shops img {
+	padding: 0;
+	width: 202px;
+	margin: 15px;
+	border-radius: 15px;
+}
+.hot-shops img:hover {
+	box-shadow: 0 0 10px 5px #bebebe;
+}
+
+/*特价出售*/
+.sales {
+	width: 930px;
+	margin: 30px auto;
+}
+.sales img {
+	margin: 15px;
+	border-radius: 15px;
+}
+.sales img:hover {
+	box-shadow: 0 0 10px 5px #bebebe;
+}
+.sales .sort {
+	width: 100px;
+	border-radius: 0;
+}
+.sales .sort:hover {
+	box-shadow: none;
+}
+
+/*订阅*/
+.subscribe {
+	width: 910px;
+	margin: 30px auto;
+}
+.subscribe table {
+	margin: auto;
+}
+.subscribe .title {
+	font-size: 24px;
+	font-weight: bold;
+}
+.subscribe .grey {
+	line-height: 24px;
+	font-size: 12px;
+	color: #B4B4B4;
+	font-weight: bold;
+}
+.subscribe #mail {
+	border: none;
+	border-bottom: 3px solid black;
+	background: none;
+	color: #B4B4B4;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.subscribe #mail:hover {
+	border-color: #878787;
+}
+.subscribe #mail:focus,.subscribe #subscribe {
+	outline: none;
+}
+.subscribe #subscribe {
+	background: none;
+	font-weight: bold;
+	border: 3px solid black;
+	border-radius: 50px;
+	padding: 10px 4px 10px 40px;
+	letter-spacing: 36px;
+}
+.subscribe #subscribe:hover {
+	color: #878787;
+	border-color: #878787;
+}
+.error {
+	margin-right: 55px;
+	text-align: left;
+	font-size: 14px;
+	color: red;
+	display: block;
+	width: 300px;
+	height: 16px;
+}
+
+/*页脚*/
+.footer {
+	background-color: #f1f1f1;
+	width: 100%;
+	padding: 30px 0;
+}
+.footer table {
+	margin: auto;
+}
+.footer img {
+	width: 30px;
+	display: block;
+	margin: 10px;
+}
+.footer .title {
+	font-size: 24px;
+	font-weight: bold;
+}
+.footer .grey {
+	line-height: 24px;
+	font-size: 16px;
+	color: #9e9e9e;
+	font-weight: lighter;
+	line-height: 30px;
+}
+.copy {
+	font-weight: lighter;
+	color: #999999;
+}

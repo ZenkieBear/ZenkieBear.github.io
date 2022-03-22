@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Easy家居</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript">
+	//表单验证
+	function send() {
+		if(check()) document.subscribe.submit();
+	}
+	function check() {
+		var mail = document.getElementById("mail").value;
+		var mailError = document.getElementById("mail-error");
+		var hasError = 0;
+		mailError.innerHTML = "";
+		if(mail.indexOf('@') == -1 || mail.indexOf('.') == -1){
+			mailError.innerHTML = "邮箱格式不正确，要求包含“@”和“.”";
+			hasError++;
+		}
+		if(mail.length == 0){
+			mailError.innerHTML = "请输入邮箱";
+			hasError++;
+		}
+		if(hasError > 0) return false;
+		alert("订阅成功");
+		return true;
+	}
+</script>
+</head>
+
+<body>
+	<div class="header">
+		<table cellpadding="0" cellspacing="0" align="center" width="90%" height="100%">
+			<tr>
+				<td width="150" height="50px" valign="middle">
+					<a href="index.html"><img src="images/logo.png" height="20px" alt="logo" /></a>
+				</td>
+				<td align="center"><a href="shop.html">商店</a></td>
+				<td align="center"><a href="productions.html">产品</a></td>
+				<td align="center"><a href="#" onclick="window.external.addFavorite('http://www.lofter.com','洛夫家具')" title="收藏本站到收藏夹">收藏</a></td>
+				<td align="center"><a href="login.html">登录</a></td>
+				<td align="center"><a href="register.html">注册</a></td>
+				<td width="300px">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td align="center">
+								<a href="search.html" target="_blank"><img src="images/顶部图标-04.png" width="30px" /></a>
+							</td>
+							<td align="center">
+								<a href="account.html" target="_blank"><img src="images/顶部图标-03.png" width="30px" /></a>
+							</td>
+							<td align="center">
+								<a href="shopcar.html" target="_blank"><img src="images/顶部图标-02.png" width="30px" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="7">
+					<hr>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="7">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>	
+							<td align="center">
+							<a href="productions.html#tables"><img src="images/家具-02.png" width="50px">桌子</a></td>
+							<td align="center">
+							<a href="productions.html#chairs"><img src="images/家具-03.png" width="50px">椅子</a></td>
+							<td align="center">
+							<a href="productions.html#sofas"><img src="images/家具-04.png" width="50px">沙发</a></td>
+							<td align="center">
+							<a href="productions.html#lights"><img src="images/家具-05.png" width="50px">灯具</a></td>
+							<td align="center">
+							<a href="productions.html#accessories"><img src="images/家具-06.png" width="50px">配件</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="banner-on"></div>
+	<div class="banner" onclick="window.open('commodity/sofa.html','_self')">
+		<div class="banner-text">
+			<span class="white">
+				01
+			</span><br>
+			<span class="title">
+				CASTLE
+			</span><br>
+			<span class="small">
+				<span class="grey">by</span> zenkiers design
+			</span><br>
+			<a class="buy" href="commodity/sofa.html">立即购买</a>
+		</div>
+	</div>
+	<div class="productions">
+	  	<a href="commodity/sofa.html"><img src="images/13.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/15.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/17.jpg" /></a>
+		<br>
+        <a href="commodity/sofa.html"><img src="images/18.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/14.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/16.jpg" /></a>
+	</div>
+	<div class="hot-shops">
+		<table width="100%">
+			<tr>
+				<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;最热商品
+				</td>
+				<td align="right">
+					<img src="images/sort.png" class="sort"/>
+				</td>
+			</tr>
+		</table>
+        <a href="commodity/sofa.html"><img src="images/1.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/2.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/3.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/4.jpg" /></a>
+		<br>
+        <a href="commodity/sofa.html"><img src="images/5.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/6.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/7.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/8.jpg" /></a>
+	</div>
+	<div class="sales">
+		<table width="100%">
+			<tr>
+				<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;特价出售
+				</td>
+				<td align="right">
+					<img src="images/sort.png" class="sort"/>
+				</td>
+			</tr>
+		</table>
+        <a href="commodity/sofa.html"><img src="images/9.jpg" /></a>
+		<a href="commodity/sofa.html"><img src="images/10.jpg" /></a>
+	</div>
+	<div class="subscribe">
+		<table cellspacing="0" cellpadding="0" width="90%" >
+			<tr>
+				<td class="title" colspan="2">
+					订阅
+				</td>
+			</tr>
+			<tr>
+			  <td class="grey" valign="bottom">
+					来获取活动和折扣信息
+				</td>
+				<td align="right">
+					<form name="subscribe">
+						<input type="email" id="mail" placeholder="yourmail@gmail.com" size="30"/>
+						<input type="button" id="subscribe" value="订阅" onClick="send();" />
+						<span class="error" id="mail-error"></span>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="footer">
+		<table width="940px" cellpadding="10">
+			<tr>
+				<td width="202" rowspan="2" align="center">
+					<a href="http://www.facebook.com/"><img src="images/facebook.png" /></a>
+					<a href="http://wpa.qq.com/msgrd?v=3&uin=2759713028&site=qq&menu=yes"><img src="images/QQ.png" /></a>
+					<a href="http://wx.qq.com/"><img src="images/wechat.png" /></a>
+					<a href="http://www.twitter.com/"><img src="images/twitter.png" /></a>
+					<a href="http://mail.google.com/"><img src="images/google.png" /></a>
+				</td>
+				<td class="title" colspan="2">
+					客户服务
+				</td>
+				<td class="title">
+					关于
+				</td>
+			</tr>
+			<tr>
+				<td class="grey" valign="bottom">
+					<a href="#">帮助</a><br>
+					<a href="#">联系我们</a><br>
+					<a href="#">问题</a><br>
+					<a href="#">组织&amp;条件</a><br>
+				<a href="#">航运信息</a></td>
+				<td class="grey">
+					<a href="#">我的账号</a><br>
+					<a href="#">订单状态</a><br>
+					<a href="#">付款方式</a><br>
+					<a href="#">礼金券</a><br>
+				<a href="#">退款</a></td>
+				<td class="grey">
+					<a href="#">产品</a><br>
+					<a href="#">工作</a><br>
+					<a href="#">收藏</a><br>
+					<a href="#">博客</a><br>
+				<a href="#">媒体</a></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="4" class="copy"><br>
+					&copy; Copyright by ZENKIERs<br>
+					2020-2020
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

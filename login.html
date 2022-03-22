@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录-Easy家居</title>
+<link href="css/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	function send() {
+		if(check()) document.data.submit();
+	}
+	function check() {
+		var usn = document.getElementById("username").value;
+		var pwd = document.getElementById("password").value;
+		var nameError = document.getElementById("name-error");
+		var passwordError = document.getElementById("password-error");
+		var hasError = 0;
+		nameError.innerHTML = "";
+		passwordError.innerHTML = "";
+		if(usn.length == 0){
+			document.getElementById("name-error").innerHTML = "请输入用户名";
+			hasError++;
+		}
+		if(pwd.length == 0){
+			document.getElementById("password-error").innerHTML = "请输入密码";
+			hasError++;
+		}
+		if(hasError > 0) return false;
+		alert("登陆成功");
+		return true;
+	}
+</script>
+</head>
+
+<body>
+	<div class="header">
+		<table cellpadding="0" cellspacing="0" width="90%" height="100%">
+			<tr>
+				<td width="150" height="50px" valign="middle">
+					<a href="index.html"><img src="images/logo.png" height="30px" alt="logo" /></a>
+				</td>
+				<td align="center"><a href="shop.html">商店</a></td>
+				<td align="center"><a href="productions.html">产品</a></td>
+				<td align="center"><a href="#" onclick="window.external.addFavorite('http://www.lofter.com','洛夫家具')" title="收藏本站到收藏夹">收藏</a></td>
+				<td align="center"><a href="login.html">登录</a></td>
+				<td align="center"><a href="register.html">注册</a></td>
+				<td width="300px">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td align="center">
+								<a href="search.html" target="_blank"><img src="images/顶部图标-04.png" width="30px" /></a>
+							</td>
+							<td align="center">
+								<a href="account.html" target="_blank"><img src="images/顶部图标-03.png" width="30px" /></a>
+							</td>
+							<td align="center">
+								<a href="shopcar.html" target="_blank"><img src="images/顶部图标-02.png" width="30px" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="login">
+		<div class="input-area">
+			<form name="data" method="get" action="index.html">
+				<table cellspacing="20" cellpadding="0">
+					<tr>
+						<td class="title">
+							登录
+						</td>
+					</tr>
+					<tr>
+						<td>
+							用户名
+						</td>
+						<td>
+							<input type="text" id="username" class="inputer" size="40" />
+							<span id="name-error" class="error"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							密码
+						</td>
+						<td>
+							<input type="password" id="password" class="inputer" size="40" />
+							<span id="password-error" class="error"></span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="justify" valign="middle">
+							<input type="button" value="登录" id="login" onclick="send();"/>
+							<a class="to-register" href="register.html">还没有账号？点我注册</a>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

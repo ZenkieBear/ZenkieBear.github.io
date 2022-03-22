@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+/*规范*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 微软雅黑;
+}
+body {
+	background-color: #F9F9F9;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #878787;
+}
+a:hover,img,input{
+	transition: all 0.3s;
+}
+
+/*头部*/
+.header{
+	width: 100%;
+	height: 100px;
+	font-weight: bold;
+	background-color: white;
+}
+.header table {
+	margin: auto;
+}
+.header img {
+	vertical-align: middle;
+}
+
+/*登录区*/
+.login {
+	position: fixed;
+	top:100px;
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-image: url("../images/bg-login.jpg");
+}
+.input-area {
+	width: 45%;
+	height: 100%;
+	background-color: #f4f4f4;
+	margin-left: 800px;
+	border: 1px solid white;
+	font-size: 24px;
+	font-weight: lighter;
+}
+.input-area table {
+	margin: 100px auto;
+}
+.input-area .title {
+	font-size: 36px;
+	font-weight: 500;
+}
+input.inputer {
+	background: none;
+	padding-bottom: 10px;
+	border: none;
+	border-bottom: 2px solid black;
+}
+input.inputer:hover {
+	border-color: #878787;
+}
+input:focus {
+	outline: none;
+}
+input#login {
+	font-size: 16px;
+	background: none;
+	font-weight: bold;
+	border:3px solid black;
+	border-radius: 50px;
+	padding: 10px 14px 10px 50px;
+	letter-spacing: 36px;
+}
+input#login:hover {
+	color: #878787;
+	border-color: #878787;
+}
+a.to-register {
+	font-size: 12px;
+	margin-left: 20px;
+}
+.error {
+	font-size: 14px;
+	color: red;
+	display: block;
+	width: 250px;
+	height: 16px;
+}
